@@ -19,6 +19,11 @@ Day 1
           node index.js
 
           ( nodemon version of typerscript ... _ ) 
+
+         NOTE IT IS TWO TERMINAL THING : 
+             add a terminal for node index.js  ( or ) node --watch dist/index.js
+               while other runs tsc --watch 
+
           node --watch dist/index.js     ( node js handles it and you dont need to keep writing node index.js
 
           
