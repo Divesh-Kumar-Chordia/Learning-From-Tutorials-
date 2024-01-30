@@ -1,0 +1,21 @@
+Day 1
+ 
+ Type script 
+    let name : type 
+    let name = value
+    let name : type = value 
+
+  to run 
+     tsc index.ts
+     node index.ts
+  better 
+      tsc --init 
+      "rootDir" : "/src" , "outDir" : "/dist"  = > in tsc.config file 
+      now still everytime you will need to run 
+        tsc 
+          to update changes . ( IT CREATES a javascript file in dist folder . if you place ts file in src folder . ) 
+        so run 
+          tsc --watch 
+          ( nodemon version of typerscript ... _ ) 
+          
+          
