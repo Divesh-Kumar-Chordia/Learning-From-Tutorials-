@@ -27,3 +27,15 @@ Day 1
           node --watch dist/index.js     ( node js handles it and you dont need to keep writing node index.js
 
           
+//// writing functions : 
+ const fun  = ( a:number ,b: number) : number =>{
+   return a + b; 
+}
+
+function dd( a: number , b:number ) : number {
+  return a+b;
+}
+function ddddd( a : number[] ) {
+ console.log( a[0]);
+}
+??void - no need to write = > void function ; 
