@@ -44,3 +44,38 @@ let a : any
 let a 
 both are correct 
 
+//tupple
+
+let person : [ string , boolean , number ] = [ "divesh" , "false " , 11] 
+
+here the order and type -  > is given . -> tupple 
+
+//example : 
+function useCoords():[number,number] {
+// get coords
+const lat = 100
+const long = 50
+return [lat, long]
+}
+const [lat, long] = useCoords();
+
+
+//named tupple : 
+ let user = [ age: number , name : string ] 
+
+it gives people a feedback .. 
+Good Practice. 
+
+//interface 
+
+interface Author {
+name: string,
+avatar: string
+}
+
+const authorOne: Author = {name: 'mario' , avatar: '/img/mario.png'}
+
+
+
+
+
