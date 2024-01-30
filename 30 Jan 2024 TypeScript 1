@@ -76,6 +76,64 @@ avatar: string
 const authorOne: Author = {name: 'mario' , avatar: '/img/mario.png'}
 
 
+//type -object 
+
+type User = {
+name: string
+score: number
+}
+const userOne: User ={ name: 'mario' , score: 75 }
+
+
+//union type : 
+
+let user : string | null 
+
+so it can be string or it can be null ; 
+
+problem is 
+
+on using it in funciton = > return type would have number | string  etc.. that would led to type miss match = > how would it deciede anyway . SO 
+WE CAN ONLY USE THOSE VALUES OF PROPS WHICH ARE COMMON FOR BOTH TYPE /s 
+eg : 
+type ID : string | number ;
+function fun ( id : ID ) : ID {
+   //to over come the problem we use type cast 
+
+   1. type guard - they check the types ; ; 
+            if( typeof id === "string"){    // only when id is of type string ... }
+            if( typeof id === "number") {  // ....}
+
+hence if we dont have any content outside the bifurcations then we can pass indiviual types . 
+
+tagged types ; 
+
+interface User {
+type : 'user'
+username: string
+email: string
+ld: ld
+
+
+interface Person {
+type : 'person '
+firstname: string
+age: number
+id: ld
+  }
+
+WE HARD CODE THE TYPE INSIDE THE INTERFACE ; 
+then we can use guard : 
+
+   if ( value.type === "user"){
+
+   ///etc . 
+
+
+
+
+
+
 
 
 
