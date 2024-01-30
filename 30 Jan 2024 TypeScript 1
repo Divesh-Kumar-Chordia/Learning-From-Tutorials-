@@ -7,7 +7,7 @@ Day 1
 
   to run 
      tsc index.ts
-     node index.ts
+     node index.js
   better 
       tsc --init 
       "rootDir" : "/src" , "outDir" : "/dist"  = > in tsc.config file 
@@ -16,6 +16,9 @@ Day 1
           to update changes . ( IT CREATES a javascript file in dist folder . if you place ts file in src folder . ) 
         so run 
           tsc --watch 
+          node index.js
+
           ( nodemon version of typerscript ... _ ) 
-          
+          node --watch dist/index.js     ( node js handles it and you dont need to keep writing node index.js
+
           
